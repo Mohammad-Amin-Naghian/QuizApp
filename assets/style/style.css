@@ -1,0 +1,187 @@
+body {
+    background-color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 40%;
+    height: 530px;
+    background-color: white;
+    margin: 2% auto;
+    border-radius: 5%;
+}
+
+.modal {
+    position: absolute;
+    visibility: hidden;
+    box-shadow: inset 0px 0px 9px 0px #000;
+    width: 235px;
+    height: 234px;
+    text-align: center;
+    padding: 25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1;
+    background-color: white;
+} 
+.images.happy {
+   
+    display: block;
+    background-image: url(./happy.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+.images.sad {
+
+    display: block;
+    background-image: url(./sad.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.bullet, .display-word {
+    display: flex;
+    justify-content: center;
+}
+
+.description p {
+    padding: 25px 30px;
+    text-align: center;
+}
+
+.bullet .bullets{
+   
+
+    background-color: white;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin: 10px 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.timer>span {
+    font-size: 20px;
+}
+
+.question {
+    display: none;
+
+    margin: 0 25px;
+}
+
+.show-word {
+    margin: 15px auto;
+}
+
+.display-text {
+    display: none;
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text-input {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.scoreResult {
+    display: none;
+
+}
+
+.scores, .button {
+    text-align: center;
+}
+
+.text-input input {
+    display: none;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.button {
+    margin: 25px 0;
+}
+
+.btn-guess {
+    display: none;
+    background-color: darkgoldenrod;
+    color: white;
+    outline: none;
+    border: none;
+    height: 45px;
+    width: 105px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-start {
+    background-color: blue ;
+    color: white;
+    outline: none;
+    border: none;
+    height: 45px;
+    width: 105px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: -11px;
+}
+
+.btn-guess:hover {
+    width: 200px;
+    transition: width 2s ease-in-out;
+}
+
+@media  (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+    .container {
+        width: 90% !important;
+    }
+
+    .description {
+        margin-top: -30px;
+    }
+
+    .description p {
+        padding: 16px 25px;
+    }
+
+    .btn-start {
+        margin-top: -28px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        width: 95% !important;
+    }
+} 
